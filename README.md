@@ -6,6 +6,31 @@
 # The problem
 On Samsung devices, use of WakeLock with `PowerManager.PROXIMITY_SCREEN_OFF_WAKE_LOCK` triggers `onHostPause` (turning off) and `onHostResume` (turning on).
 
+# Install and test
+Just clone the repo and yarn/npm it. The link is already done.
+
+```bash
+git clone https://github.com/GuiCavi/incallmanager-test.git
+
+yarn
+
+# or
+
+npm i
+```
+
+To test
+
+```bash
+react-native run-android
+
+# and
+
+react-native log-android
+```
+
+Don't forget the `logcat` for native messages.
+
 # The demo code
 The code uses `react-native-incall-manager`. It's a simple React Component with the most important part inside `componentDidMount`. 
 
